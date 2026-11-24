@@ -1,0 +1,22 @@
+{
+  "id": "calmpilot",
+  "name": "CalmPilot",
+  "release": "0.3.0",
+  "address": "jetpax.github.io/calmpilot-app",
+  "look": {
+    "accent": { "light": "#3f6f86", "dark": "#8cb8cc" },
+    "accent_contrast": { "light": "#ffffff", "dark": "#14202a" },
+    "theme_color": "#1d2328",
+    "background_color": "#1d2328",
+    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#8cb8cc\"/><rect x=\"18\" y=\"12\" width=\"28\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"#14202a\" stroke-width=\"4\"/><path d=\"M25 24h14 M25 32h14 M25 40h8\" stroke=\"#14202a\" stroke-width=\"4\" stroke-linecap=\"round\"/></svg>"
+  },
+  "platform": { "botiq": "2.2.11", "boards": ["xteink_x4pro"] },
+  "hardware": [
+    { "board": "xteink_x4pro", "name": "Xteink X4 Pro", "chip": "ESP32-S3", "variant": "ESP32_S3_16_INK",
+      "description": "The e-paper reader CalmPilot runs on" }
+  ],
+  "scriptos": [{ "id": "calmpilot" }],
+  "app": { "id": "calmpilot", "opens": "pages" },
+  "setup": ["flash", "wifi", "install"],
+  "studio": { "system": ["wifi", "ntp", "sdcard", "firmware", "about"], "agent": "optional", "board_apps": true, "browse": true }
+}
